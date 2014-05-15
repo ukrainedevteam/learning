@@ -21,3 +21,5 @@ public interface CalcInterface {
 	int sqr();
 
 }
+
+// проверочный комментарий
