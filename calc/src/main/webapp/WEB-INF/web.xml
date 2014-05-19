@@ -26,7 +26,21 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletAdaptor</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/calc/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WebServAdaptor</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>WebServices</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WebServAdaptor</servlet-name>
+        <url-pattern>/WebServices/*</url-pattern>
     </servlet-mapping>
 
 	<welcome-file-list>

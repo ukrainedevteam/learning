@@ -14,6 +14,7 @@ public class CalcService {
     @Path("/calculate")
     @Produces("text/plain")
     public String calculate(){
+
         return "Service executed";
     }
 }
